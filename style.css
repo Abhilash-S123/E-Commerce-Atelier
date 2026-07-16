@@ -1,13 +1,13 @@
 body {
-   margin: 0px; 
-   padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav {
-   display: flex;
-   width: 100%;
-   height: 81px;
-   border: 1px solid #E7E5E4;
+    display: flex;
+    width: 100%;
+    height: 81px;
+    border: 1px solid #E7E5E4;
 }
 
 .parent-nav {
@@ -23,12 +23,19 @@ body {
     width: 33.33%;
     display: flex;
     gap: 32px;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .parent-nav-child-2 {
     display: flex;
     justify-content: center;
     width: 33.33%;
+    a {
+        text-decoration: none;
+    }
 }
 
 .parent-nav-child-3 {
@@ -36,11 +43,11 @@ body {
 }
 
 .header {
-    background-image: url("images/259aaaf6baae37330ec95816462b2d8eef3d5224\ \(1\).png");
+    background-image: url("images/hero.png");
     background-color: #F4F4F2;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -48,6 +55,24 @@ body {
     align-items: center;
 }
 
-.hero {
-    
+.hero {}
+
+section {
+    width: 100%;
+    height: 90.59px;
+    background-color: #F9F9F7;
+    border: 1px solid #C4C7C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family;
+        }
+    }
 }
