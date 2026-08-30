@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <section class="container fluid ">
+        <div class="row section">
+            <div class="col-md-4 main ">
+                <div class="centering">
+                    <p class="heading">ANTLIER</p>
+                </div>
+                <div id="signin-create" class="centering sub-heading">Sign in to your account</div>
+                <div class="list-group" id="list-tab" role="tablist">
+
+                    <!-- Signin and Create Account toggle  -->                  
+                    <div class="btn-centering mb-3">
+                        <div class="centering">
+                            <a class="list-group-item-action active button " id="signin-btn" data-bs-toggle="list"
+                                href="#list-home" role="tab" aria-controls="list-home">Sign in</a>
+                        </div>
+                        <div class="centering">
+                            <a class="list-group-item-action button" id="list-settings-list" data-bs-toggle="list"
+                                href="#list-settings" role="tab" aria-controls="list-settings">Create account</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+
+                            <!-- Signin form -->
+                            <form action="">
+                                <div class="mt-2">
+                                    <div class="email mb-2">
+                                        <label class="email-pass-input" for="">EMAIL ADDRESS</label>
+                                        <input placeholder="your@email.com" class="w-100 input" type="text">
+                                    </div>
+                                    <div class="password">
+                                        <label class="email-pass-input" for="">PASSWORD</label>
+                                        <input placeholder="••••••••" class="w-100 input " type="password">
+                                    </div>
+                                    <div class="remember-forgot-sec">
+                                        <div>
+                                            <input type="checkbox">
+                                            <label class="remember-me" for="">Remember me</label>
+                                        </div>
+
+                                        <a class="forgot-pass" href="">Forgot password?</a>
+                                    </div>
+                                    <button class="submit-btn" type="submit">SIGN IN</button>
+                                </div>
+                            </form>
+                            <div class="google">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p>OR CONTINUE WITH</p>
+                                </div>
+                                <button class="signin-and-create-btn w-100">Google</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+
+                            <!-- Create Account form -->
+                            <form id="create-account" action="">
+                                <div class="d-flex">
+                                    <input class="w-100 mb-2 input" id="firstname-check" placeholder="Firstname" type="text">
+                                   
+                                    <input class="w-100 mb-2 input" id="lastname-check" placeholder="Lastname" type="text">
+                                    
+                                </div>
+                                 <div id="firstname-error" class="text-danger small mt-1"></div>
+                                 <div id="lastname-error" class="text-danger small mt-1"></div>
+                                <input class="w-100 mb-2 input" id="email-check" placeholder="Email" type="email">
+                                <div id="email-error" class="text-danger small mt-1"></div>
+                                <input class="w-100 input" id="password-check" placeholder="Password" type="password">
+                                <div id="password-error" class="text-danger small mt-1"></div>
+
+                                <div class="remember-forgot-sec d-block">
+                                    <div class="d-flex">
+                                        <input class="mb-4 me-2" type="checkbox">
+                                        <label class="remember-me" for="">Subscribe to our newsletter for exclusive
+                                            offers and updates.</label>
+                                    </div>
+                                    <div class="d-flex mt-3">
+                                        <input class="mb-4 me-2" type="checkbox">
+                                        <label class="remember-me" for="">I agree to the Terms and Conditions and
+                                            Privacy
+                                            Policy
+                                            .*</label>
+                                    </div>
+                                </div>
+                                <button class="submit-btn" type="submit">CREATE ACCOUNT</button>
+                            </form>
+
+                            <div class="google">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p>OR CONTINUE WITH</p>
+                                </div>
+                                <button class="signin-and-create-btn w-100">Google</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="signin.js"></script>
+</body>
+
+</html>
