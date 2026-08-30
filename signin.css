@@ -1,18 +1,22 @@
-.section {
-   padding-top: 168.61px;
-   padding-bottom: 168.62px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    color: #444748;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main {
-   border: 1px solid brown; 
-   height: 440px;
-  padding: 50px;
- 
+    /* border: 1px solid brown; */
+    padding: 50px;
 }
 
 .centering {
@@ -32,13 +36,16 @@
     font-size: 39px;
     size: 400px;
     height: 39px;
+    letter-spacing: 7.2px;
+    line-height: 38.4px;
+    color: #000000;
 
 }
 
 .button {
     border: none;
-   text-decoration: none;
-   color: black;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -46,8 +53,91 @@
 .sub-heading {
     padding-top: 7px;
     margin-bottom: 30px;
+    size: 16px;
 }
 
 .password {
     display: block;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+    background-color: #000000;
+    color: white;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.email-pass-input {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+}
+
+.remember-me {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0px;
+}
+
+.forgot-pass {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #444748;
+}
+
+.remember-forgot-sec {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 16.01px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google {
+    display: flex;
+    flex-direction: column;
+    gap: px;
+    margin-top: 24px;
+}
+
+
+.signin-and-create-btn {
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+    border: none;
+}
+
+.input {
+    height: 48px;
+    border: none;
+}
+
+.create {
+    font-family: Noto Serif;
+
+    font-weight: 300;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 31.2px;
+    letter-spacing: 0px;
 }
